@@ -1,0 +1,55 @@
+.message {
+  position: relative;
+  max-width: 70%;
+  margin: 15px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-family: 'Comic Neue', 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  border: 2px solid white;
+  animation: mangaPop 0.3s ease-out;
+  transform-origin: bottom left;
+}
+
+.message.twitch {
+  border-color: #a259ff;
+  box-shadow: 0 0 20px #a259ff;
+}
+
+.message.tiktok {
+  border-color: #ff4f81;
+  box-shadow: 0 0 20px #ff4f81;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+  text-shadow: 0 0 5px currentColor;
+}
+
+.message-text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-style: italic;
+  text-shadow: 0 0 5px currentColor;
+}
+
+@keyframes mangaPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
